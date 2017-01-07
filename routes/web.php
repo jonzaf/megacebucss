@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', 'ZafraController@index');
+
+Route::get('/tagsdb', function () {	return view('welcome');	});
+Route::post('/tagsdb', 'ZafraController@tagsdb');
